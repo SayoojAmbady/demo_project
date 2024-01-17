@@ -1,4 +1,5 @@
-import 'package:demo_project/Screens/home_screen.dart';
+
+import 'package:demo_project/widgets/bottombar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'Screens/splashscreen.dart'; // Import your SplashScreen widget
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'SplashScreen with GetX',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/splash',  // Initial route to SplashScreen
       getPages: [
         GetPage(name: '/splash', page: () => SplashScreen()),
-         GetPage(name: '/home', page: () => HomeScreen()),
+         GetPage(name: '/home', page: () => BottomBar()),
       ],
     );
   }

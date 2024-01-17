@@ -1,3 +1,5 @@
+
+import 'package:demo_project/widgets/customtext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,9 +16,16 @@ class SplashScreen extends StatelessWidget {
     );
 
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 7, 7, 7),
+      backgroundColor: Color.fromARGB(255, 243, 180, 180),
       body: Center(
-        child: Image.asset("assets/images/VENUS logo red-02.png"),
+        child:Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [ Image.asset("assets/images/logo-color.png"),
+          SizedBox(height: 20,),
+          Text("ShopX",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),)],
+        ),
+        
+        
       ),
     );
   }
