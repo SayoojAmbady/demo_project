@@ -1,23 +1,26 @@
 import 'package:flutter/material.dart';
 
 class SPIcon extends StatelessWidget {
-  const SPIcon(
-      {Key? key,
-      required this.assetname,
-      this.index,
-      this.currentIndex,
-      this.isSelected= false});
+  const SPIcon({
+    Key? key,
+    required this.assetname,
+    this.isSelected = false,
+  }) : super(key: key);
 
-  final String assetname;
-  final int? index;
-  final int? currentIndex;
+  final String? assetname;
   final bool isSelected;
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset('assets/images/$assetname',
+    if (assetname != null && assetname!.isNotEmpty) {
+      return Image.asset(
+        'assets/images/$assetname',
         height: 25,
         width: 25,
-        color: isSelected? Colors.redAccent : Colors.black);
-}
+        color: isSelected ? const Color(0xfffe416c) : Colors.black,
+      );
+    } else {
+      return Container(); // Or any other fallback widget
+    }
+  }
 }

@@ -1,5 +1,4 @@
 
-import 'package:demo_project/widgets/customtext.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

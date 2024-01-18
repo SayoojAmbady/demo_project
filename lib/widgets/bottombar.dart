@@ -1,6 +1,6 @@
 import 'package:demo_project/Screens/category_screen.dart';
 import 'package:demo_project/Screens/home_screen.dart';
-import 'package:demo_project/Screens/profile_screen.dart';
+import 'package:demo_project/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../foundation/sp_icon/sp_icon.dart';
@@ -31,21 +31,24 @@ class _LandingPageState extends State<BottomBar> {
             currentState = newIndex;
           });
         },
-        unselectedItemColor: Colors.black87,
-        selectedItemColor: Colors.redAccent,
+         unselectedItemColor: Colors.black87,
+         selectedItemColor: Colors.redAccent,
         items: [
           BottomNavigationBarItem(
               icon: SPIcon(
                   assetname: 'logo-black.png',
-                  isSelected: 0 == currentIndex),
+                isSelected:0 == currentIndex,
+                  ),
               label: "Home"),
           BottomNavigationBarItem(
               icon: SPIcon(
-                  assetname: 'categories.png', isSelected: 1 == currentIndex),
+                  assetname: 'categories.png',
+                  isSelected:1 == currentIndex,),
               label: "Categories"),
           BottomNavigationBarItem(
               icon:
-                  SPIcon(assetname: 'profile.png', isSelected: 2 == currentIndex),
+                  SPIcon(assetname: 'profile.png', 
+                  isSelected:2 == currentIndex,),
               label: "Profile")
         ],
      ),
