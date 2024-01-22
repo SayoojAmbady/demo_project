@@ -1,4 +1,4 @@
-import 'package:demo_project/widgets/customtext.dart';
+import 'package:demo_project/Feature/Login/login_bottomsheet.dart';
 import 'package:flutter/material.dart';
 
 class CategoryScreen extends StatelessWidget {
@@ -7,7 +7,7 @@ class CategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child: CustomText(text: "HEllo")),
+      body: SafeArea(child: LoginBottomSheet()),
     );
   }
 }

@@ -15,7 +15,7 @@ class ProfileScreen extends StatelessWidget {
       centerTitle: false,
       title: Text("Profile",style: Theme.of(context).textTheme.headline6,),
     ),
-    body: ProfileWithoutLogin(),
+    body: SingleChildScrollView(child: SafeArea(child: ProfileWithoutLogin())),
     
     );
   }
