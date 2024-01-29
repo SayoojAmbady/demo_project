@@ -12,13 +12,22 @@ connection.once("open", () =>
     console.log("MongoDb is successfully connected")
 )
 
+//middleware
+app.use(express.json());
+const loginRoutes = require("./routes/login.routes");
+app.use("/login",loginRoutes);
+
 app.route("/").get((req,res)=>{
     res.json("Server is configure")
 });
 
 
+
 app.listen(port,"0.0.0.0",()=>{console.log("Welcome to port:",port);
 })
+
+
+
 
 
 
