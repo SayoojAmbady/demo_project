@@ -1,5 +1,5 @@
+import 'package:demo_project/Feature/landing_page/landing_page.dart';
 import 'package:demo_project/theme/colors.dart';
-import 'package:demo_project/widgets/bottombar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'Screens/splashscreen.dart'; // Import your SplashScreen widget
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/splash', // Initial route to SplashScreen
       getPages: [
         GetPage(name: '/splash', page: () => SplashScreen()),
-        GetPage(name: '/home', page: () => BottomBar()),
+        GetPage(name: '/home', page: () => LandingPage()),
       ],
     );
   }

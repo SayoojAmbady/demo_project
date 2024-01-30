@@ -1,23 +1,26 @@
+import 'package:demo_project/Feature/landing_page/controller/landingpage_controller.dart';
 import 'package:demo_project/Screens/category_screen.dart';
 import 'package:demo_project/Screens/home_screen.dart';
 import 'package:demo_project/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../foundation/sp_icon/sp_icon.dart';
 
-class BottomBar extends StatefulWidget {
-  const BottomBar({super.key});
+class LandingPage extends StatefulWidget {
+  const LandingPage({super.key});
 
   @override
-  State<BottomBar> createState() => _LandingPageState();
+  State<LandingPage> createState() => _LandingPageState();
 }
 
-class _LandingPageState extends State<BottomBar> {
+class _LandingPageState extends State<LandingPage> {
   int currentState = 0;
 
   final _pages = [HomeScreen(), CategoryScreen(), ProfileScreen()];
 
   get currentIndex => currentState;
+   var landingPageController = Get.put(LandingPageController());
 
   @override
   Widget build(BuildContext context) {

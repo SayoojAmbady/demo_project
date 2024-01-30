@@ -1,7 +1,9 @@
 import 'package:demo_project/Feature/login/login_bottomsheet.dart';
 import 'package:demo_project/foundation/profile_item/profile_item.dart';
+import 'package:demo_project/foundation/sp_solid_button/sp_solid_button.dart';
 import 'package:demo_project/theme/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ProfileWithoutLogin extends StatelessWidget {
   const ProfileWithoutLogin({super.key});
@@ -41,25 +43,13 @@ class ProfileWithoutLogin extends StatelessWidget {
               ),
             ),
             Positioned(
-                bottom: 22,
-                left: 168,
-                child: ElevatedButton(
-                    onPressed: () {
-                      showModalBottomSheet(
-                          context: context,
-                          builder: (BuildContext context) =>
-                              LoginBottomSheet());
-                    },
-                    style: ButtonStyle(
-                        elevation: MaterialStateProperty.all(0),
-                        backgroundColor:
-                            MaterialStateProperty.all(Appcolor.buttonColor),
-                        textStyle: MaterialStateProperty.all(TextStyle(
-                            fontSize: 12.5, fontWeight: FontWeight.w600))),
-                    child: Container(
-                        width: MediaQuery.of(context).size.width - 210,
-                        height: 45,
-                        child: Center(child: Text("LOGIN/SIGNUP")))))
+              bottom: 22,
+              left: 150,
+              child: Container(
+                width: MediaQuery.of(context).size.width/1.7,
+                  child: SPSolidButton(text: "LOGIN/SIGUP",  onpressed: () => Get.bottomSheet(LoginBottomSheet()),),
+                  ),
+            ),
           ],
         ),
       ),
@@ -68,13 +58,14 @@ class ProfileWithoutLogin extends StatelessWidget {
       ),
       Container(
           color: Appcolor.whiteColor,
-          child: const Column(
+          child:  Column(
             children: [
               ProfileItem(
                 title: "Orders",
                 subtitle: "Check your order",
                 assetName: "orders.png",
                 isLast: false,
+                onTap: () => Get.bottomSheet( LoginBottomSheet()),
               ),
               ProfileItem(
                 title: "Help Center",
