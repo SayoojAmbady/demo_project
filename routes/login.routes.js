@@ -76,8 +76,9 @@ router.post("/register", (req, res) => {
 
 // Function to send JWT token as a response
 const sendToken = (mobileNo, res, message) => {
-    let token = jwt.sign({ mobileNo: mobileNo }, "Key");
+    let token = jwt.sign({ mobileNo: mobileNo }, config.key);
     res.json({ token: token, msg: message }); 
 }
 
 module.exports = router;
+

@@ -1,4 +1,5 @@
 import 'package:demo_project/Feature/login/controller/login_controller.dart';
+import 'package:demo_project/Feature/register/register.dart';
 import 'package:demo_project/foundation/sp_solid_button/sp_solid_button.dart';
 import 'package:demo_project/foundation/sp_text_field/sptext_field.dart';
 import 'package:demo_project/theme/colors.dart';
@@ -127,7 +128,7 @@ class LoginBottomSheet extends StatelessWidget {
                       const SizedBox(
                         height: 20,
                       ),
-                       Expanded(child: SPSolidButton(text: "CONTINUE",onpressed: loginController.login,)),
+                       Expanded(child: SPSolidButton(text: "CONTINUE",onpressed: () => Get.to(RegisterPage()),)),
                       SizedBox(
                         height: 20,
                       ),

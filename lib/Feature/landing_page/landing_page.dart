@@ -1,5 +1,5 @@
 import 'package:demo_project/Feature/landing_page/controller/landingpage_controller.dart';
-import 'package:demo_project/Screens/category_screen.dart';
+import 'package:demo_project/Feature/category/category_screen.dart';
 import 'package:demo_project/Screens/home_screen.dart';
 import 'package:demo_project/profile/profile_screen.dart';
 import 'package:flutter/material.dart';

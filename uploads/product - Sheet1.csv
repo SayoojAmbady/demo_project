@@ -1,0 +1,9 @@
+name,desc,wishlisted,actual_price,discounted_price,discound,category,sub_category,type,genere,brand,image_url,rating,no_of_reviews
+Shirt,This is a Shirt,FALSE,4999,2999,20,Men,Topwear,Shirt,New,Addidas,1,4.5,200
+Shirt,This is a Shirt,FALSE,1999,999,50,Women,Topwear,Shirt,Classic,Puma,2,3,100
+Tshirt,This is a T-Shirt,FALSE,999,499,50,Women,Topwear,T-Shirt,New,UA,3,4.5,200
+Tshirt,This is a T-Shirt,FALSE,999,799,20,Men,Topwear,T-Shirt,New,Rebok,4,4.5,200
+Pants,This is a Pant,FALSE,4999,2999,20,Women,Botttomwear,Pant,New,Levis,5,5,200
+Pants,This is a Pant,FALSE,4999,2999,20,Men,Botttomwear,Pant,New,Levis,6,4,200
+Pants,This is a Pant,FALSE,4999,2999,20,Men,Botttomwear,Pant,New,Levis,7,4.5,200
+Pants,This is a Pant,FALSE,4999,2999,20,UniSex,Botttomwear,Pant,New,Levis,8,4,200

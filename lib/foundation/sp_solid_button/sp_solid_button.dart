@@ -44,9 +44,12 @@ class SPSolidButton extends StatelessWidget {
             backgroundColor: MaterialStatePropertyAll(Appcolor.buttonColor)),
         child: Container(
             width: MediaQuery.of(context).size.width,
-            child: Text(text,
-                textAlign: TextAlign.center,
-                style:  TextStyle(color: Appcolor.whiteColor))));
+            height: 45,
+            child: Center(
+              child: Text(text,
+                  textAlign: TextAlign.center,
+                  style:  TextStyle(color: Appcolor.whiteColor)),
+            )));
   }
 }
 

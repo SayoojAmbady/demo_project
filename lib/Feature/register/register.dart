@@ -61,7 +61,7 @@ class RegisterPage extends StatelessWidget {
                                 color: Colors.greenAccent,
                               )
                             ]),
-                        const SizedBox(height: 20),
+                         SizedBox(height: 20),
                         // MARK:- Create Password
                         SPTextFormField(
                             labelTxt: "Create Password",
@@ -75,7 +75,7 @@ class RegisterPage extends StatelessWidget {
                                 }
                               };
                             }),
-                        const SizedBox(height: 15),
+                         SizedBox(height: 15),
 
                         //MARK:- Full Name
                         SPTextFormField(
@@ -87,7 +87,7 @@ class RegisterPage extends StatelessWidget {
                                 print(value);
                               };
                             }),
-                        const SizedBox(height: 15),
+                         SizedBox(height: 15),
 
                         //MARK:- Email
                         SPTextFormField(
@@ -123,7 +123,7 @@ class RegisterPage extends StatelessWidget {
                                 }
                               };
                             }),
-                        const SizedBox(height: 15),
+                         SizedBox(height: 15),
 
                         //MARK:- Hint Name
                         SPTextFormField(
@@ -137,7 +137,7 @@ class RegisterPage extends StatelessWidget {
                                 print(value);
                               };
                             }),
-                        const SizedBox(height: 15),
+                         SizedBox(height: 15),
 
                         //MARK:- Create
                         SPSolidButton(
@@ -157,3 +157,4 @@ class RegisterPage extends StatelessWidget {
     print(gender);
   }
 }
+
