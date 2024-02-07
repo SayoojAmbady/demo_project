@@ -142,11 +142,12 @@ class RegisterPage extends StatelessWidget {
                         //MARK:- Create
                         SPSolidButton(
                           text: "create Account",
+                          height: 45,
                           onpressed: () {
                             if (formKey.currentState!.validate()) {
                               registerController.register();
                             }
-                          },
+                          }, width: MediaQuery.of(context).size.width,
                         )
                       ])))),
         ));

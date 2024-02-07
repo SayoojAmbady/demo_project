@@ -1,39 +1,11 @@
-// import 'package:demo_project/theme/colors.dart';
-// import 'package:flutter/material.dart';
-
-// class SPSolidButton extends StatelessWidget {
-//   const SPSolidButton({
-//     Key? key,
-//     required this.text,
-//     this.onPressed, required Null Function() onpressed,
-//   }) : super(key: key);
-//   final String text;
-//   final Function()? onPressed;
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return ElevatedButton(
-//         onPressed: onPressed,
-//         style: ButtonStyle(
-//             elevation: MaterialStateProperty.all(0),
-//             backgroundColor: MaterialStateProperty.all(Appcolor.buttonColor),
-//             textStyle: MaterialStateProperty.all(
-//                 TextStyle(fontSize: 12.5, fontWeight: FontWeight.w600))),
-//         child: Container(
-//             width: MediaQuery.of(context).size.width,
-//             height: 45,
-//             child: Center(child: Text(text,style: TextStyle(color: Appcolor.whiteColor),))));
-//   }
-// }
-
-
-
 import 'package:demo_project/theme/colors.dart';
 import 'package:flutter/material.dart';
 
 class SPSolidButton extends StatelessWidget {
-  const SPSolidButton({super.key, required this.text, this.onpressed});
+  const SPSolidButton({super.key, required this.text, this.onpressed, required this.width, this.height});
   final String text;
+  final double width;
+  final double? height;
   final Function()? onpressed;
 
   @override
@@ -43,8 +15,8 @@ class SPSolidButton extends StatelessWidget {
         style:  ButtonStyle(
             backgroundColor: MaterialStatePropertyAll(Appcolor.buttonColor)),
         child: Container(
-            width: MediaQuery.of(context).size.width,
-            height: 45,
+            width: width,
+            height: height,
             child: Center(
               child: Text(text,
                   textAlign: TextAlign.center,
